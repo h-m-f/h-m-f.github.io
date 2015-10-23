@@ -1,1 +1,44 @@
-
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Marshmallows
+    </title>
+    <style>
+      *:not(.slide *) {
+        margin: 0;
+        padding: 0;
+      }
+      .slide-show, .slides {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+      }
+      .slide {
+        width: 100vw;
+        height: 100vh;
+      }
+      .arrow {
+        width: 5vw;
+        height: 5vw;
+        border-radius: 5vw;
+        background-color: rgba(127, 127, 127, 0.5);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="slide-show">
+      <ul class="slides">
+        <li><div class="slide"></div></li>
+        <li><div class="slide"></div></li>
+        <li><div class="slide"></div></li>
+        <li><div class="slide"></div></li>
+        <li><div class="slide"></div></li>
+      </ul>
+      <div class="arrow previous"></div>
+      <div class="arrow next"></div>
+    </div>
+  </body>
+</html>
