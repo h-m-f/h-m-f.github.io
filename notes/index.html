@@ -1,0 +1,42 @@
+<style>
+  @font-face {
+    font-family: "bau";
+    src: url("//storage.googleapis.com/urbit-extra/bau.woff");
+    font-weight: 400;
+    font-style: normal;
+  }
+  * {
+    font-family: "bau";
+    font-weight: 400;
+  }
+  commented-out {
+    opacity: 0.5;
+  }
+  commented-out::before {
+    content: "//";
+  }
+  .results {
+    padding: 5px;
+  }
+</style>
+<h1>
+  Random Notes
+</h1>
+<commented-out><input type="text" class="range" /> Note range (e. g. A2-B4) (still being worked on, which is why it is commented out)</commented-out><br />
+Include <input type="checkbox" class="flats" />flats, <input type="checkbox" class="sharps" />sharps<br />
+<input type="number" value="1" class="howmany" /> Number of notes<br />
+<input type="submit" value="go" class="go" />
+<div class="results" />
+<script>
+  var random = a => a[Math.floor(Math.random() * a.length)]
+  var twice = f => x => f(f(x))
+  var $ = s => document.querySelector(s)
+  var $$ = s => document.querySelectorAll(s)
+  Array.prototype.map.call($$("commented-out input"), e => e.disabled = !("beta" in e.dataset))
+  $(".go").onclick = () =>
+    $(".results").innerHTML = Array(parseInt($(".howmany").value)).fill(null).map(() => twice(random)([["C"], ["D"], ["E"], ["F"], ["G"], ["A"], ["B"]].concat($(".sharps").checked
+      ? [["C\u266F"], ["D\u266F"], ["F\u266F"], ["G\u266F"], ["A\u266F"]]
+      : []).concat($(".flats").checked
+      ? [["D\u266D"], ["E\u266D"], ["G\u266D"], ["A\u266D"], ["B\u266D"]]
+      : []))).join(", ") // \u266F is sharp sign, \u266D is flat sign, \u266E is natural sign
+</script>
