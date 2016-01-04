@@ -1,0 +1,16 @@
+body {
+  background: #222;
+}
+
+canvas {
+  background: #DDD;
+  image-rendering: optimizeSpeed;
+}
+
+#display {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  image-rendering: pixelated;
+}
