@@ -48,22 +48,22 @@ binds = [
     , antiAction: []
   }
   , {
-    code: 87
+    code: 38
     , action: [() => player.y -= 0.1]
     , antiAction: []
   }
   , {
-    code: 65
+    code: 37
     , action: [() => player.x -= 0.1]
     , antiAction: []
   }
   , {
-    code: 83
+    code: 40
     , action: [() => player.y += 0.1]
     , antiAction: []
   }
   , {
-    code: 68
+    code: 39
     , action: [() => player.x += 0.1]
     , antiAction: []
   }
