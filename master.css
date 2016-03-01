@@ -1,0 +1,10 @@
+@font-face {
+  font-family: "bau";
+  src: url("//storage.googleapis.com/urbit-extra/bau.woff");
+  font-weight: 400;
+  font-style: normal;
+}
+* {
+  font-family: "bau";
+  font-weight: 400;
+}
