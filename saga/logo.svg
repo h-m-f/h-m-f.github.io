@@ -1,0 +1,41 @@
+<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <mask id="cut-out-center">
+   <rect id="svg_1" height="100" width="100" y="0" x="0" fill="#FFF"/>
+   <circle r="28.125" id="svg_2" cy="50" cx="50" fill="#000"/>
+  </mask>
+  <clipPath id="cut-off-bottom">
+   <rect id="svg_1" height="50" width="100" y="0" x="0"/>
+  </clipPath>
+  <clipPath id="cut-off-top">
+   <rect id="svg_1" height="50" width="100" y="50" x="0"/>
+  </clipPath>
+ </defs>
+ <g>
+  <title>background</title>
+  <rect x="-1" y="-1" width="102" height="102" id="canvas_background" fill="none"/>
+ </g>
+ <g mask="url(#cut-out-center)">
+  <title>rainbow</title>
+  <g id="svg_3" clip-path="url(#cut-off-bottom)">
+   <title>top</title>
+   <circle r="50" id="svg_2" cy="50" cx="50" fill="#F44336"/>
+   <circle r="46.875" id="svg_2" cy="50" cx="50" fill="#FF9800"/>
+   <circle r="43.75" id="svg_2" cy="50" cx="50" fill="#FFEB3B"/>
+   <circle r="40.625" id="svg_2" cy="50" cx="50" fill="#8BC34A"/>
+   <circle r="37.5" id="svg_2" cy="50" cx="50" fill="#2196F3"/>
+   <circle r="34.375" id="svg_2" cy="50" cx="50" fill="#673AB7"/>
+   <circle r="31.25" id="svg_2" cy="50" cx="50" fill="#9C27B0"/>
+  </g>
+  <g id="svg_4" clip-path="url(#cut-off-top)">
+   <title>bottom</title>
+   <circle r="50" id="svg_2" cy="50" cx="50" fill="#EEEEEE"/>
+   <circle r="46.875" id="svg_2" cy="50" cx="50" fill="#E0E0E0"/>
+   <circle r="43.75" id="svg_2" cy="50" cx="50" fill="#BDBDBD"/>
+   <circle r="40.625" id="svg_2" cy="50" cx="50" fill="#9E9E9E"/>
+   <circle r="37.5" id="svg_2" cy="50" cx="50" fill="#757575"/>
+   <circle r="34.375" id="svg_2" cy="50" cx="50" fill="#616161"/>
+   <circle r="31.25" id="svg_2" cy="50" cx="50" fill="#424242"/>
+  </g>
+ </g>
+</svg>
